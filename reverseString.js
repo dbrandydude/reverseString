@@ -4,13 +4,12 @@
 const reverseString = (string) => {
     if (string !== '') {
         let chars = string.split('');
-        let reverseArray = chars.reverse();
-        let reverseStr = reverseArray.join('');
+        let reverse = chars.reverse().join('');
 
-        if (string === reverseStr) {
+        if (string === reverse) {
             return true;
         } else {
-            return reverseStr;
+            return reverse;
         }
     } else {
         return null;
